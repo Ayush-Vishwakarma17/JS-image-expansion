@@ -1,3 +1,85 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+h1{
+    color: white;
+    font-size: 10rem;
+}
+.text-and-the-Image{
+    height: 48rem;
+    background-color: rgb(44, 44, 58);
+    position: relative;
+}
+.the-image{
+    position: absolute;
+    height: 32rem;
+    width: 55rem;
+    left: 38rem;
+    bottom: 3rem;
+    background-image: url('https://images.unsplash.com/photo-1549365318-d48c0437b760?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+h2{
+    color: white;
+    font-size: 7rem;
+    background-blend-mode: color-burn;
+}
+h3{
+    color: white;
+    font-size: 5rem;
+    background-blend-mode: color-burn;
+}
 
+.main-Box{
+    background-color: rgb(44, 45, 50);
+    height: 49rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    align-items: center;
+    gap: 5rem;
+}
+.container{
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.image {
+    height: 80%;
+    width: 10%;
+    border-radius: 15px 80px 15px 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: flex 0.5s ease-in;
+}
+.image h3{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3rem;
+    opacity: 0;
+}
+.image.active{
+    flex: 5;
+    border-radius: 20px;
+    height: 30rem;
+}
+.image.active h3{
+    opacity: 0.8;
+    font-size: 7rem;  
+}
+@media (max-width: 768px){
+    
 }
