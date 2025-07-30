@@ -87,5 +87,61 @@ h3{
     transition: opacity 0.4s ease-in;
 }
 @media (max-width: 768px){
-    
+    h1{
+    color: white;
+    font-size: 48px;
+}
+.text-and-the-Image{
+    padding-top: 10%;
+    padding-left: 5%;
+    height: 48rem;
+    overflow: hidden;
+    background-color: rgb(44, 44, 58);
+    position: relative;
+}
+.the-image{
+    position: absolute;
+    border-radius: 20px;
+    height: 32rem;
+    width: 25rem;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    bottom: 3rem;
+    overflow-x: hidden;
+    background-image: url('https://images.unsplash.com/photo-1549365318-d48c0437b760?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.main-Box{
+    background-color: rgb(44, 45, 50);
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    align-items: center;
+    gap: 5rem;
+}
+.container{
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.image:nth-child(4),.image:nth-child(3){
+    display: none;
+}
+h3{
+    color: white;
+    font-size: 30px;
+    background-blend-mode: color-burn;
+}
+
 }
